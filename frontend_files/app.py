@@ -32,7 +32,7 @@ customer_data = {
 }
 
 # Base URL for the backend API in Codespaces
-BACKEND_URL = "http://localhost:7860"
+BACKEND_URL = "http://backend:7860"
 
 if st.button("Predict", type='primary'):
     response = requests.post(f"{BACKEND_URL}/v1/customer", json=customer_data)
